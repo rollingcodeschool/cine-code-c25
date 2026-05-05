@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --accent-color: #ff3e3e; /* Rojo Neón */
+  --velvet-gradient: linear-gradient(45deg, #ff3e3e, #7a0000);
+  --gold-color: #d4af37;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.brand-font{
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.2rem;
+      letter-spacing: 3px;
+}
