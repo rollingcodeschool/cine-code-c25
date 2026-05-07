@@ -33,3 +33,13 @@ main{
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* estilos del carousel principal */
+.img-banner{
+  height: 80vh;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,.carousel-control-next-icon{
+  filter: invert(1);
+}
