@@ -15,8 +15,8 @@ body {
   flex-direction: column;
 }
 
-main{
-    flex-grow: 1;
+main {
+  flex-grow: 1;
 }
 
 /* estilos del navbar */
@@ -35,20 +35,40 @@ main{
 }
 
 /* estilos del carousel principal */
-.img-banner{
+.img-banner {
   height: 80vh;
   object-fit: cover;
 }
 
-.carousel-control-prev-icon,.carousel-control-next-icon{
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
   filter: invert(1);
 }
 
-.btn-velvet{
+.btn-velvet {
   background: var(--velvet-gradient);
   border: none;
 }
 
-.section-title{
+.section-title {
   font-size: 3.5rem;
+}
+/* seccion candy */
+.price-tag {
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--gold-color);
+  font-size: 1.8rem;
+}
+
+#candy {
+  .btn-velvet {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+}
+
+.candy-img{
+  height: 365px;
+  object-fit: cover;
 }
