@@ -4,7 +4,7 @@ Practica de componentes de bootstrap sobre una web de un cine. Ofrece la cartele
 
 ## 🦖 Demo del proyecto
 
-Mira la demo [aqui](https://cine-code.netlify.app/)
+Mira la demo [aqui](https://cine-code-25.netlify.app/)
 
 ## 🛠️ Tecnologias y herramientas usadas
 
