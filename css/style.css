@@ -80,6 +80,17 @@ section{
 .btn-velvet {
   background: var(--velvet-gradient);
   border: none;
+  /* todo: efectos para el boton */
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.btn-velvet:hover {
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 62, 62, 0.4);
 }
 
 .section-title {
