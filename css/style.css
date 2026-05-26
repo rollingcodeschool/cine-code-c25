@@ -138,6 +138,18 @@ section{
 }
 
 .candy-img{
-  height: 365px;
+  height: 390px;
   object-fit: cover;
+}
+
+/* todo: agregue un borde de color cuando hacemos el hover en las card del candy bar */
+.combo-card {
+  border: 1px solid #222;
+  background: #111;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.combo-card:hover {
+  border-color: var(--accent-color);
 }
