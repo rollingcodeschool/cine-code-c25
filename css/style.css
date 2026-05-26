@@ -96,6 +96,21 @@ section{
 .section-title {
   font-size: 3.5rem;
 }
+
+/* todo: efectos para las cards de la cartelera */
+.movie-card {
+  background-color: #111;
+  transition: all 0.4s ease; /* Transición suave para el efecto */
+  overflow: hidden;
+}
+
+.movie-card:hover {
+  transform: translateY(-15px); 
+  box-shadow: 0 15px 40px rgba(255, 62, 62, 0.5); 
+  border: 1px solid rgba(255, 62, 62, 0.3);
+}
+
+
 /* seccion candy */
 .price-tag {
   font-family: "Bebas Neue", sans-serif;
