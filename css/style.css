@@ -110,6 +110,17 @@ section{
   border: 1px solid rgba(255, 62, 62, 0.3);
 }
 
+.movie-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--velvet-gradient);
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  z-index: 2;
+}
 
 /* seccion candy */
 .price-tag {
