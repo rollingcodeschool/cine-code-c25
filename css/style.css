@@ -19,7 +19,7 @@ main {
   flex-grow: 1;
 }
 
-section{
+section {
   scroll-margin-top: 80px;
 }
 
@@ -65,7 +65,7 @@ section{
     transparent 35%,
     rgba(0, 0, 0, 0.953) 100%
   );
-  z-index: 1; 
+  z-index: 1;
 }
 
 #carouselMovies .carousel-caption {
@@ -105,8 +105,8 @@ section{
 }
 
 .movie-card:hover {
-  transform: translateY(-15px); 
-  box-shadow: 0 15px 40px rgba(255, 62, 62, 0.5); 
+  transform: translateY(-15px);
+  box-shadow: 0 15px 40px rgba(255, 62, 62, 0.5);
   border: 1px solid rgba(255, 62, 62, 0.3);
 }
 
@@ -137,7 +137,7 @@ section{
   }
 }
 
-.candy-img{
+.candy-img {
   height: 390px;
   object-fit: cover;
 }
@@ -152,4 +152,11 @@ section{
 
 .combo-card:hover {
   border-color: var(--accent-color);
+}
+
+/* todo: animacion en el logo del cine */
+.logo-animado{
+  color: var(--accent-color); 
+  display: inline-block;
+  -webkit-text-fill-color: initial;
 }
