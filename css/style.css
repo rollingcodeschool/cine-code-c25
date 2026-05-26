@@ -19,7 +19,7 @@ main {
   flex-grow: 1;
 }
 
-section{
+section {
   scroll-margin-top: 80px;
 }
 
@@ -39,9 +39,33 @@ section{
 }
 
 /* estilos del carousel principal */
-.img-banner {
+
+#carouselMovies .carousel-item {
   height: 80vh;
-  object-fit: cover;
+  position: relative;
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+#carouselMovies .carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 35%,
+    rgba(0, 0, 0, 0.953) 100%
+  );
+  z-index: 1;
+}
+
+#carouselMovies .carousel-caption {
+  z-index: 2;
 }
 
 .carousel-control-prev-icon,
@@ -52,11 +76,48 @@ section{
 .btn-velvet {
   background: var(--velvet-gradient);
   border: none;
+  /* todo: efectos para el boton */
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.btn-velvet:hover {
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 62, 62, 0.4);
 }
 
 .section-title {
   font-size: 3.5rem;
 }
+
+/* todo: efectos para las cards de la cartelera */
+.movie-card {
+  background-color: #111;
+  transition: all 0.4s ease; /* Transición suave para el efecto */
+  overflow: hidden;
+}
+
+.movie-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 15px 40px rgba(255, 62, 62, 0.5);
+  border: 1px solid rgba(255, 62, 62, 0.3);
+}
+
+.movie-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--velvet-gradient);
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  z-index: 2;
+}
+
 /* seccion candy */
 .price-tag {
   font-family: "Bebas Neue", sans-serif;
@@ -64,15 +125,48 @@ section{
   font-size: 1.8rem;
 }
 
-#candy {
-  .btn-velvet {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-  }
-}
-
-.candy-img{
-  height: 365px;
+.candy-img {
+  height: 390px;
   object-fit: cover;
 }
+
+/* todo: agregue un borde de color cuando hacemos el hover en las card del candy bar */
+.combo-card {
+  border: 1px solid #222;
+  background: #111;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.combo-card:hover {
+  border-color: var(--accent-color);
+}
+
+/* todo: animacion en el logo del cine */
+.logo-animado{
+  color: var(--accent-color); 
+  display: inline-block;
+  -webkit-text-fill-color: initial;
+}
+
+.logo-animado{
+  animation: vaivenCine 3s linear infinite;
+}
+
+@keyframes vaivenCine{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(45deg);
+  }
+  75%{
+     transform: rotate(-45deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+
+}
+
+/* las media queries van aqui abajo */
